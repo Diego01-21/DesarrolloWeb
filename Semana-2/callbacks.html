@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Callback ejemplo</title>
+</head>
+<body>
+
+    <button id="btn">Haz clic</button>
+
+    <script>
+        function mensaje() {
+            alert("¡Hiciste clic en el botón!");
+        }
+
+        // Aquí usamos un callback
+        document.getElementById("btn").addEventListener("click", mensaje);
+    </script>
+
+</body>
+</html>
