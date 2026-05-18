@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Parte Teorica</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href=".css/styless.css">
+</head>
+
+
+<body class="bg-light">
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Examen Bootstrap</a>
+
+            <div>
+                <a class="btn btn-outline-light me-2" href="teorica.html">Teoria</a>
+                <a class="btn btn-warning" href="practica.html">Practica</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="container mt-5">
+
+        <h1 class="text-center mb-4">Parte Teorica React </h1>
+
+          <!-- Cards -->
+        <div class= "row">
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3>1. ¿Que hace useState?</h3>
+                        <p>
+                            Permite guard ar datos dentro de un componente
+                            Tambien permite actualizar esos datos.
+                        </p>
+
+<pre>
+const [contador, setContador] = useState(0);
+</pre>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h3>2.  Que es un Fragment?</h3>
+                        <p>
+                            Un fragmento sirve para agrupar elementos sin crear un div extra. <> </>
+                        </p>
+
+<pre>
+<>
+   <h1>Hola</h1>
+   <p>Mundo</p>
+   </>
+</pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#item1">
+                        3. Diferencia entre useContext y useState ...</button>
+                </h2>
+
+                <div id="item1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>useState:</strong> guarda datos en un componente <br>
+                        <br>
+                        <strong>useContext:</strong> comparte datos entre varios componentes.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item2">
+                        4. Estructura basica de un componente funcional
+                    </button>
+                </h2>
+
+                <div id="item2" class="accordion-collapse collapse">
+
+                    <div class="accordion-body">
+
+<pre>
+  function Saludo() {
+  <br> return (
+      <h1>Hola Mundo</h1>
+   );
+   }
+
+export default Saludo;
+</pre>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- en lace bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

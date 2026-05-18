@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SEMAFORO </title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styless.css">
+
+    
+
+
+</head>
+<body class="bg-light">
+
+    <!-- MENU -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+        <div class="container">
+            <a class="navbar-brand" href="#">Examen Bootstrap</a>
+
+            <div>
+                <a class="btn btn-outline-light me-2" href="teorica.html">Teoria</a>
+
+                <a class="btn btn-succes" href="practica.html">Practica</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5">
+
+        <h1 class="mb-4">Simulador de Semaforo</h1>
+
+        <!--    SEMAFORO  -->
+
+        <div class="semaforo mx-auto p-3 bg-primary rounded">
+
+            <div id="rojo" class="luz bg-secondary"></div>
+
+            <div id="amarillo" class="luz bg-secondary"></div>
+
+            <div id="verde" class="luz bg-secondary"></div>
+
+        </div>
+
+        <!-- BOTPNES -->
+
+        
+<div class="container mt-4 d-flex flex-column align-items-center">
+
+    <button class="btn btn-danger mb-3 w-25" onclick="cambiarLuz('rojo')">
+        <i class="bi bi-cursor"></i>
+        Rojo
+    </button>
+
+    <button class="btn btn-warning mb-3 w-25" onclick="cambiarLuz('amarillo')">
+        Amarillo
+        <i class="bi bi-cursor"></i>
+    </button>
+
+    <button  class="btn btn-success w-25" onclick="cambiarLuz('verde')">
+        <i class="bi bi-cursor"></i>
+        Verde
+    </button>
+
+</div>
+
+    </div>
+
+    
+<script src="js/funtions.js"></script>
+</body>
+
+
+</html>
